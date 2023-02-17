@@ -1,0 +1,4 @@
+IMDB=# \copy genre_enum( genre_number, genre_name) from '/Users/vishalpanchidi/Desktop/Big_data_assignments/Assigment1_filtered/genre_enumdf.csv' (format csv, delimiter ',', header true);
+IMDB=# \copy name_data(nconst,primaryName,birthYear,deathYear) from '/Users/vishalpanchidi/Desktop/Big_data_assignments/Assigment1_filtered/names.csv' (format csv, delimiter ',', header true);
+IMDB=# \copy resultTitleMapper( tconst,nconst,category) from '/Users/vishalpanchidi/Desktop/Big_data_assignments/Assigment1_filtered/resultTitleMapper.csv' (format csv, delimiter ',', header true);
+IMDB=# \copy ratings( tconst, averageRating, numVotes) from '/Users/vishalpanchidi/Desktop/Big_data_assignments/Assigment1_filtered/ratings_of_titles.csv' (format csv, delimiter ',', header true);
